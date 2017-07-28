@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private HelpUtil mHelpUtil;
+    private HelpUtil mHelpUtil2;
     private Context ctx;
 
     @Override
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         //方案2  使用工具类防止双击 问题:快速点击两个控件，第二个控件不会响应
         mHelpUtil = new HelpUtil();
+        mHelpUtil2 = new HelpUtil();
         findViewById(R.id.btn_one).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_two).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (mHelpUtil.isOnDoubleClick(1000)) {
+                if (mHelpUtil2.isOnDoubleClick(1000)) {
                     return;
                 }
                 Log.i("LHD", "弹出吐司222");
