@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.plush81029.doubleclicktest.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="HelpUtil"/>
+
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="one"/>
+
+    <Button
+        android:id="@+id/btn_two"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="two"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="重写onClickListener"/>
+
+    <Button
+        android:id="@+id/btn_three"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Three"/>
+
+    <Button
+        android:id="@+id/btn_four"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Four"/>
+</LinearLayout>
